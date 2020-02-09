@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "ICO1.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "jqueryui/css/redmond/jquery-ui-1.10.3.custom.new.css" ],
+      "js": [ "jqueryui/js/jquery-1.9.1.js", "jqueryui/js/jquery-ui-1.10.3.custom.min.js", "js/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "点击生成当前网址二维码",
+   "icons": {
+      "128": "ICO1.png",
+      "16": "ICO1.png",
+      "48": "ICO1.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmPb8MJtU3IchPRNdg6Nj5PaapBd1tHfUXAy2/qK/fm817OSmp8FJeQBx+1SpmSakQRuOPEAtBgVZLDzAjbLyJ2tQGCDQKYYhJVdr6xPBsg9DVZahJ9RbNJ8J2Ah0KOjl8eA0zPtytYAxHyWe28R0F845l+X4jwCxo8zRCgxPg941LdLcCTonNw8jzjYEQuDJm9KAF58xDr84xaRndE9MvbuGcMWPdYC8v9Ympt/FhufwlYeuLqZ0ZsXZ8ikTqimVH/FmPNr01IG8BvSsnlgGwygc4ht9NHM4DDSdK3hnD46NIcXyehBhFJHs0wTd/F/FXI1kABsiO2KkbjWQOGxgeQIDAQAB",
+   "manifest_version": 2,
+   "name": "草料二维码",
+   "permissions": [ "tabs", "contextMenus", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.5.2"
+}
